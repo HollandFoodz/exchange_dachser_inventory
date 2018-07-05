@@ -44,6 +44,8 @@ def convert_mikado():
     fp = get_latest_file()
     if os.path.isfile(fp):
         df = pd.read_csv(fp, sep=';', skiprows=16, encoding='latin-1')
+        df['Article no.'] = df['Article no.'].str.replace("'", "")
+        df['BBD'] = df['BBD'].str.replace(".", "/")
         df.to_csv('./mikado_report.csv')
 
 
