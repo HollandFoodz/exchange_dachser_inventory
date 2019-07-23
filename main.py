@@ -155,3 +155,5 @@ if __name__ == '__main__':
     if exit_code:
         error_msg = 'An import from the Dachser (Germany) system failed.\n\nPlease contact IT to review the following error:\n\n{}'.format(error_msg)
         mail(SMTP_SERVER, SENDER_EMAIL, RECEIVER_EMAIL, SENDER_PASSWORD, error_msg)
+    else:
+        logging.info("Completed successfully")
