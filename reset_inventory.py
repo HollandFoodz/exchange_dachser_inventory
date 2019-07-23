@@ -2,8 +2,7 @@ import lxml.etree as etree
 from utils import *
 
 # Reindex database?
-ignored_articles = ['000', '001', '002', '003', '004', '005', '006', '007', '008', '009', '010', '011', '012', \
-    'TSDFDF', 'Kok', 'Deegbereiding', 'Rollen', \
+ignored_articles = ['TSDFDF', 'Kok', 'Deegbereiding', 'Rollen', \
     'Flowpacken', 'chocolateren', 'Deegbreiding likz', 'Inleg lolly', 'Insteek lolly', 'Inpak likz', 'Inpak Nougat', \
     'Inpak stokken', 'Inpak wichtgoed', 'Magazijn', 'Nougat snijden', 'Spinnen lolly', 'TD']
 
